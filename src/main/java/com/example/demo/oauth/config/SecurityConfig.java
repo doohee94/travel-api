@@ -73,6 +73,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/travel/**").permitAll()
                 .antMatchers("/api/user/**").permitAll()
                 .antMatchers("/api/company/**").permitAll()
+                .antMatchers("/api/parse/**").permitAll()
                 .anyRequest().denyAll();
 
         security
